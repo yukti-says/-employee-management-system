@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Apollonia Employee Management</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>Employee Management</h1>
+
+  <!-- Add Employee Form -->
+  <form id="employeeForm">
+    <input type="text" id="name" placeholder="Name" required />
+    <input type="text" id="role" placeholder="Role" />
+    <input type="email" id="email" placeholder="Email" required />
+    <input type="text" id="phone" placeholder="Phone" />
+    <select id="departmentSelect">
+      <option value="">Select Department</option>
+    </select>
+    <button type="submit">Add Employee</button>
+  </form>
+
+  <hr />
+
+  <!-- Employee Table -->
+  <h2>Employees</h2>
+  <table border="1">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Role</th>
+        <th>Email</th>
+        <th>Phone</th>
+        <th>Department</th>
+        <th>Actions</th>
+      </tr>
+    </thead>
+    <tbody id="employeeTableBody">
+      <!-- Rows will be added here -->
+    </tbody>
+  </table>
+
+  <hr />
+<h1>Department Management</h1>
+
+<!-- Add Department Form -->
+<form id="departmentForm">
+  <input type="text" id="deptName" placeholder="Department Name" required />
+  <input type="text" id="deptDesc" placeholder="Description" />
+  <button type="submit">Add Department</button>
+</form>
+
+<!-- Departments Table -->
+<table border="1">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Description</th>
+      <th>Actions</th>
+    </tr>
+  </thead>
+  <tbody id="departmentTableBody">
+    <!-- Rows will be injected here -->
+  </tbody>
+</table>
+
+
+  <script src="script.js"></script>
+</body>
+</html>
