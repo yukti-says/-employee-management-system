@@ -20,7 +20,8 @@ const deptDescInput = document.getElementById('deptDesc')
 const deptTableBody = document.getElementById('departmentTableBody')
 
 // base url of server
-const BASE_URL = "http://localhost:3000/api";
+const BASE_URL = "/api";
+
 
 
 async function loadDepartmentsUI() {
